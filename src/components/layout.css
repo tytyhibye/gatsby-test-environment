@@ -1,12 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Georgia;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  text-align: center;
+  background-image: url("https://i.ibb.co/ZKKfS8n/Start.jpg");
+  background-size: 70vh;
+  background-position: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  width: 500px;
+  height: 200px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+  margin: 0 auto;
+  color: #999;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+.start-btn {
+  width: 210px;
+  height: 60px;
+  font-size: 40px;
+  text-decoration: none;
+  margin-top: 5vh;
+  background-color: #333;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: rgb(255, 200, 50);
+  outline: none;
+}
+
+.start-btn:hover {
+  background-color: rgb(255, 200, 50);
+  color: #333;
+}
+
+.btn {
+  background-color: #333;
+  border: 1px solid #000;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: #999;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(255, 200, 50);
+  color: #333;
 }
 article,
 aside,
